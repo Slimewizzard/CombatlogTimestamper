@@ -12,6 +12,10 @@ A lightweight Turtle WoW addon that places a clickable button on your screen to 
 | **Right-click** button | Opens the config panel |
 | **Drag** button | Move it anywhere on screen |
 
+<img width="683" height="417" alt="bilde" src="https://github.com/user-attachments/assets/2af52ae4-6714-44bf-851a-6893230eed95" />
+
+<img width="723" height="103" alt="bilde" src="https://github.com/user-attachments/assets/c4f14172-7c21-4843-9c36-d79e8dcd2355" />
+
 ## Slash Commands
 
 | Command | Description |
