@@ -50,6 +50,19 @@ Each click writes a line like this to `WoWCombatLog.txt`:
 
 Make sure combat logging is enabled (`/combatlog`).
 
+## Flushing to Disk
+
+WoW writes combat log data in **batches** — it buffers entries in memory and flushes them to `WoWCombatLog.txt` on its own schedule. This means your marker might not appear in the file immediately after clicking.
+
+The addon attempts to force a flush by toggling combat logging off and back on (`LoggingCombat(0)` → `LoggingCombat(1)`) after each stamp. This usually works, but WoW ultimately decides when data hits the disk.
+
+If your marker isn't showing up in the file yet:
+- **Wait a moment** — WoW may flush on its own after a few seconds
+- **`/reload`** — forces a UI reload which flushes the buffer
+- **Log out** — guaranteed flush on character logout or `/quit`
+
+The marker **is** being written — it just may take a moment to appear in the file.
+
 ## Settings
 
 All settings (position, size, visibility, message) are saved per-character.
