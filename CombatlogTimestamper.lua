@@ -45,9 +45,6 @@ local function StampCombatLog()
     -- Write directly to WoWCombatLog.txt via SuperWoW
     if CombatLogAdd then
         CombatLogAdd("CTS_MARKER: [#" .. count .. "] " .. msg)
-        -- Flush: toggle logging off/on to force write to disk
-        LoggingCombat(0)
-        LoggingCombat(1)
         DEFAULT_CHAT_FRAME:AddMessage("|cff44ff44[CTS]|r Marker #" .. count .. " written.")
     else
         DEFAULT_CHAT_FRAME:AddMessage("|cffff4444[CTS]|r CombatLogAdd not found - SuperWoW required!")
