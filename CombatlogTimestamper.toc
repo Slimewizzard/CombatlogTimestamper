@@ -1,0 +1,5 @@
+## Interface: 11200
+## Title: Combatlog Timestamper
+## Notes: Adds a red button that stamps the combat log with a marker message.
+## SavedVariablesPerCharacter: CTS_Config, CTS_Stamps
+CombatlogTimestamper.lua
